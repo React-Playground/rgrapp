@@ -13,11 +13,6 @@ const API = {
       }`
     })
     .then(resp => {
-      console.log(resp);
-      return resp
-    })
-    .then(resp => {
-      console.log(resp);
       ServerActions.receiveLinks(resp.data.links);
     });
   }
